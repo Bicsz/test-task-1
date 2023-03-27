@@ -36,11 +36,10 @@ export const UserDataSlice = createSlice({
       state.id = action.payload.id;
       state.name = action.payload.name;
     },
-    checkAuth: (state) => {},
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { exitAuth, saveAuth, checkAuth } = UserDataSlice.actions;
+export const { exitAuth, saveAuth } = UserDataSlice.actions;
 
 export default UserDataSlice.reducer;
